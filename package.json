@@ -1,14 +1,10 @@
 {
-  "name": "faker-zh-cn",
-  "description": "生成一堆假的（看起来像真的）数据",
-  "version": "0.5.8",
-  "author": {
-    "name": "Michael Yin",
-    "email": "layerssss@gmail.com"
-  },
+  "name": "faker-cn",
+  "description": "生成一堆假的（看起来像真的）数据，基于faker-zh-cn，新增图片等",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/layerssss/Faker-zh-cn.js.git"
+    "url": "git+https://github.com/xingmolu/faker-cn.git"
   },
   "devDependencies": {
     "jshint": "0.9.0",
@@ -24,27 +20,5 @@
   "main": "index",
   "dependencies": {
     "pinyin": "0.0.1"
-  },
-  "readme": "#  Faker-zh-cn.js - 生成一堆假的（看起来像真的）数据\n\n![Faker](logo.png)\n\n## 用法\n### 在node.js环境中\n      var Faker = require('faker-zh-cn');\n      var randomName = Faker.Name.findName(); // 萧若南\n      var randomEmail = Faker.Internet.email(); // gaoge.jian@yulong.com\n      var randomCard = Faker.Helpers.createCard(); // random contact card containing many properties\n## API\n\n### Name\n\n* firstname（已本地化）\n* lastName（已本地化）\n* findName（已本地化）\n\n### Address\n\n* zipCode（已本地化）\n* zipCodeFormat（已本地化）\n* city（已本地化）\n* streetName（已本地化）\n* streetAddress（已本地化）\n* secondaryAddress（已本地化）\n* brState\n* ukCounty\n* ukCountry\n* cnState（已本地化）\n* latitude\n* longitude\n\n### PhoneNumber\n* phoneNumber（已本地化）\n* phoneNumberFormat（已本地化）\n\n### Internet\n\n* email（已本地化）\n* userName（已本地化）\n* domainName（已本地化）\n* domainWord（已本地化）\n* ip\n\n### Company\n\n* suffixes（已本地化）\n* companyName（已本地化）\n* companySuffix（已本地化）\n* catchPhrase\n* bs（已本地化）\n\n### Lorem\n\n* words（已本地化）\n* sentence（已本地化）\n* sentences（已本地化）\n* paragraph（已本地化）\n* paragraphs（已本地化）\n\n### Helpers\n\n* randomNumber\n* randomize\n* slugify（已本地化）\n* replaceSymbolWithNumber\n* shuffle\n* createCard\n* userCard\n\n### random\n\n* number\n* array_element\n* city_prefix（已本地化）\n* city_suffix（已本地化）\n* street_suffix（已本地化）\n* br_state\n* br_state_abbr\n* cn_state（已本地化）\n* cn_state_abbr（已本地化）\n* uk_county\n* uk_country\n* first_name（已本地化）\n* last_name（已本地化）\n* name_prefix（已本地化）\n* name_suffix（已本地化）\n* catch_phrase_adjective\n* catch_phrase_descriptor\n* catch_phrase_noun\n* bs_adjective（已本地化）\n* bs_buzz（已本地化）\n* bs_noun（已本地化）\n* phone_formats（已本地化）\n* domain_suffix（已本地化）\n\n### definitions\n\n* first_name（已本地化）\n* last_name（已本地化）\n* name_prefix（已本地化）\n* name_suffix（已本地化）\n* br_state\n* br_state_abbr\n* cn_state（已本地化）\n* cn_state_abbr（已本地化）\n* city_prefix（已本地化）\n* city_suffix（已本地化）\n* street_suffix（已本地化）\n* uk_county\n* uk_country\n* catch_phrase_adjective\n* catch_phrase_descriptor\n* catch_phrase_noun\n* bs_adjective（已本地化）\n* bs_buzz（已本地化）\n* bs_noun（已本地化）\n* domain_suffix（已本地化）\n* lorem（已本地化）\n* phone_formats（已本地化）\n\n## 测试\n为了减小合并未来版本的工作量，我们暂时没有移植测试。\n## 作者\n####Matthew Bergman & Marak Squires\nHeavily inspired by Benjamin Curtis's Ruby Gem [Faker](http://faker.rubyforge.org/) and Perl's [Data::Faker](http://search.cpan.org/~jasonk/Data-Faker-0.07/lib/Data/Faker.pm)\n####Michael Yin （中文本地化）\n####[己所不欲](http://weibo.com/u/1766294634) （友情配图）\n<br/>\nCopyright (c) 2010 Matthew Bergman & Marak Squires http://github.com/marak/Faker.js/\n<br/>\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n<br/>\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n<br/>\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
-  "readmeFilename": "Readme.md",
-  "_id": "faker-zh-cn@0.5.8",
-  "dist": {
-    "shasum": "5fe485583a4020a523a5ed8b8b924e184010d966",
-    "tarball": "http://registry.npmjs.org/faker-zh-cn/-/faker-zh-cn-0.5.8.tgz"
-  },
-  "_from": "faker-zh-cn@>=0.5.8 <0.6.0",
-  "_npmVersion": "1.2.18",
-  "_npmUser": {
-    "name": "layerssss",
-    "email": "layerssss@gmail.com"
-  },
-  "maintainers": [
-    {
-      "name": "layerssss",
-      "email": "layerssss@gmail.com"
-    }
-  ],
-  "directories": {},
-  "_shasum": "5fe485583a4020a523a5ed8b8b924e184010d966",
-  "_resolved": "https://registry.npmjs.org/faker-zh-cn/-/faker-zh-cn-0.5.8.tgz"
+  }
 }
