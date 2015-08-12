@@ -1,7 +1,7 @@
 {
   "name": "faker-cn",
   "description": "生成一堆假的（看起来像真的）数据，基于faker-zh-cn，新增图片等",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xingmolu/faker-cn.git"
